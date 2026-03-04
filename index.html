@@ -304,59 +304,77 @@
             </span>
         </div>
 
-        <div class="max-w-4xl mx-auto px-4 md:px-8 py-16 md:py-24">
-            <div class="flex flex-col items-center text-center relative z-20">
-                <p class="text-brand-gold text-sm font-bold tracking-widest uppercase mb-4">
-                    #1 Natural Vision Support Formula in the US
-                </p>
-                <h1
-                    class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 break-words text-white">
-                    See Clearly Again —<br>
-                    <span class="italic text-brand-gold">Naturally.</span>
-                </h1>
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-14 md:py-20">
+            <!-- DESKTOP: two columns | MOBILE: stacked -->
+            <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
-                <!-- Hero Image - Centralized between H1 and Text -->
-                <div class="w-full max-w-[420px] mb-12 transform hover:scale-[1.02] transition duration-500">
-                    <img src="images/optivell-hero.webp"
-                        alt="Optivell eye health supplement bottle with natural ingredients"
-                        class="w-full h-auto rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/5"
-                        fetchpriority="high" decoding="sync"
-                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <!-- Fallback if no image -->
-                    <div style="display:none"
-                        class="w-full aspect-[4/5] rounded-3xl bg-brand-tealLight flex flex-col items-center justify-center text-white/60 shadow-2xl border border-white/10">
-                        <i class="fa-solid fa-eye text-6xl mb-4 star-gold"></i>
-                        <p class="font-display text-2xl font-bold text-white">OPTIVELL</p>
-                        <p class="text-sm mt-1">Natural Eye Support</p>
+                <!-- LEFT: Text Column -->
+                <div class="flex-1 text-center lg:text-left order-1">
+                    <p class="text-brand-gold text-sm font-bold tracking-widest uppercase mb-5">
+                        #1 Natural Vision Support Formula in the US
+                    </p>
+                    <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 text-white">
+                        See Clearly Again —<br>
+                        <span class="italic text-brand-gold">Naturally.</span>
+                    </h1>
+
+                    <!-- Image: visible only on MOBILE (between title and text) -->
+                    <div class="block lg:hidden w-full max-w-[380px] mx-auto my-8">
+                        <img src="images/optivell-hero.webp" alt="Optivell vision support supplement 60 capsules"
+                            class="w-full h-auto drop-shadow-2xl" fetchpriority="high" decoding="sync"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display:none"
+                            class="w-full aspect-square bg-brand-tealLight flex flex-col items-center justify-center text-white/60">
+                            <i class="fa-solid fa-eye text-5xl mb-3 star-gold"></i>
+                            <p class="font-display text-xl font-bold text-white">OPTIVELL</p>
+                        </div>
+                    </div>
+
+                    <p class="text-brand-textLight text-lg md:text-xl leading-relaxed mb-4 max-w-xl mx-auto lg:mx-0">
+                        Optivell is the powerful natural formula that works with your eyes to reduce blurry vision,
+                        eliminate eye fatigue, and restore the sharp clarity you remember.
+                    </p>
+                    <p class="text-brand-textLight text-base leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
+                        Whether you struggle with screen fatigue, difficulty reading, or reduced night vision — <strong
+                            class="text-white">Optivell supports your eyes from the inside out</strong> using a precise
+                        blend of clinically-studied nutrients including lutein, zeaxanthin, and key vitamins.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-8">
+                        <a href="https://myblogshop.top/r/Kayhaogr/s"
+                            class="btn-cta w-full sm:w-auto text-lg px-12 py-5 rounded-md shadow-lg uppercase tracking-wide"
+                            target="_blank" rel="noopener noreferrer">
+                            GET OPTIVELL NOW <i class="fa-solid fa-cart-shopping ml-2 text-sm"></i>
+                        </a>
+                    </div>
+
+                    <div
+                        class="flex flex-wrap items-center gap-6 justify-center lg:justify-start text-sm text-brand-textLight">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved star-gold"></i>
+                            60-Day Guarantee</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-leaf star-gold"></i> 100%
+                            Natural</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-flask star-gold"></i> GMP
+                            Certified</span>
                     </div>
                 </div>
 
-                <p class="text-brand-textLight text-lg md:text-xl leading-relaxed mb-4 max-w-2xl mx-auto">
-                    Optivell is the powerful natural formula that works with your eyes to reduce blurry vision,
-                    eliminate eye fatigue, and restore the sharp clarity you remember.
-                </p>
-                <p class="text-brand-textLight text-base leading-relaxed mb-10 max-w-2xl mx-auto">
-                    Whether you struggle with screen fatigue, difficulty reading, or reduced night vision — <strong
-                        class="text-white">Optivell supports your eyes from the inside out</strong> using a precise
-                    blend of clinically-studied nutrients.
-                </p>
-
-                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center mb-10">
-                    <a href="https://myblogshop.top/r/Kayhaogr/s"
-                        class="btn-cta w-full sm:w-auto text-lg px-12 py-5 rounded-md shadow-lg uppercase tracking-wide"
-                        target="_blank" rel="noopener noreferrer">
-                        GET OPTIVELL NOW <i class="fa-solid fa-cart-shopping ml-2 text-sm"></i>
-                    </a>
+                <!-- RIGHT: Image Column — desktop only -->
+                <div
+                    class="hidden lg:flex flex-shrink-0 order-2 items-end justify-center w-full max-w-[480px] relative">
+                    <img src="images/optivell-hero.webp"
+                        alt="Optivell vision support supplement 60 capsules advanced formula"
+                        class="w-full h-auto drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]" fetchpriority="high"
+                        decoding="sync"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display:none"
+                        class="w-full aspect-square bg-brand-tealLight flex flex-col items-center justify-center text-white/60">
+                        <i class="fa-solid fa-eye text-7xl mb-4 star-gold"></i>
+                        <p class="font-display text-3xl font-bold text-white">OPTIVELL</p>
+                        <p class="text-sm mt-2">Natural Eye Support</p>
+                    </div>
                 </div>
 
-                <div class="flex flex-wrap items-center gap-6 justify-center text-sm text-brand-textLight">
-                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved star-gold"></i>
-                        60-Day Guarantee</span>
-                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-leaf star-gold"></i> 100%
-                        Natural</span>
-                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-flask star-gold"></i> GMP
-                        Certified</span>
-                </div>
             </div>
         </div>
     </section>
@@ -633,7 +651,8 @@
                 bottle contains <strong>60 capsules</strong> (we also offer <strong>120 capsules</strong> or even 180
                 capsules for extended daily use, allowing 2 capsules per day), providing an optimal supply of this
                 premium <strong>dietary supplement</strong>. Whether you seek <strong>eye comfort</strong> or everyday
-                visual wellness, <strong>optivell</strong> stands out.</p>
+                visual wellness, <strong>optivell</strong> stands out.
+            </p>
 
             <h1 class="text-xl font-display font-bold text-brand-navy mb-4">Optivell Vision: Maximum Strength Eye
                 Supplement & Vitamin Wellness</h1>
@@ -644,7 +663,8 @@
                 against age-related decline. Sometimes referred to as <strong>optivell vision</strong>, <strong>optivell
                     advanced</strong>, or <strong>optivell pro</strong>, it delivers a <strong>maximum strength</strong>
                 <strong>vision support</strong> experience. It is a true <strong>eye supplement</strong> prioritizing
-                <strong>wellness</strong>.</p>
+                <strong>wellness</strong>.
+            </p>
 
             <h2 class="text-lg font-bold text-brand-navy mt-6 mb-3">Optivell Vitamin and Dietary Supplement Information
             </h2>
@@ -654,7 +674,8 @@
                 nourishment. As a premium <strong>dietary</strong> option, this <strong>supplement formulated</strong>
                 in a GMP certified facility surpasses basic softgels or standard <strong>support pills</strong>. Built
                 on the foundation of the AREDS 2 formula, it aims to enhance <strong>vision wellness</strong>. You can
-                buy optivell today and enjoy free shipping.</p>
+                buy optivell today and enjoy free shipping.
+            </p>
 
             <h2 class="text-lg font-bold text-brand-navy mt-6 mb-3">Customer Reviews: Optivell Vision Support</h2>
             <p class="mb-4">Reading <strong>customer reviews</strong>, many users note feeling relief from eye strain
@@ -663,7 +684,8 @@
                 <strong>official optivell</strong> <strong>optivell capsules</strong> into your daily eye care routine
                 can be transformative. If you wish to <strong>support eye health</strong>, support healthy eyesight, and
                 maintain high visual performance during everyday visual tasks, <strong>optivell</strong> offers
-                incredible value. It is a plus eye supplement that is carefully selected for daily use.</p>
+                incredible value. It is a plus eye supplement that is carefully selected for daily use.
+            </p>
 
             <h1 class="text-lg font-bold text-brand-navy mt-6 mb-3">Product Information: Support Pills, Eye Supplement,
                 and Eye Wellness</h1>
@@ -674,7 +696,8 @@
                 professional regarding <strong>visual health</strong>. With consistent use per bottle,
                 <strong>optivell</strong> remains the ultimate dietary companion. Choose the <strong>optivell</strong>
                 <strong>capsule</strong> to support your <strong>eye wellness</strong> and <strong>eye health</strong>
-                today.</p>
+                today.
+            </p>
 
             <!-- Extra SEO keyword padding to meet exact count targets invisibly integrating them into a final summary paragraph -->
             <p class="mb-4 text-xs text-gray-500">
